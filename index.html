@@ -21,30 +21,32 @@
         <div class="row">
             <div class="col-md">
                 <h1>Input your details below</h1>
-                <div class="mb-3">
-                    <lable for="birth_day" class="form-lable1">Birth day</lable>
-                    <input type="text" class="form-control" id="birth_day" placeholder="1-31">
-                </div>
+                <form name="name_generator" action="" method="POST">
+                    <div class="mb-3">
+                        <lable for="birth_day" class="form-lable1">Birth day</lable>
+                        <input type="text" class="form-control" id="birth_dayid" name="birth_day" placeholder="1-31" value="day">
+                    </div>
 
-                <div class="mb-3">
-                    <lable for="birth_month" class="form-lable1">Birth month </lable>
-                    <input type="text" class="form-control" id="birth_month" placeholder="1-12">
-                </div>
+                    <div class="mb-3">
+                        <lable for="birth_month" class="form-lable1">Birth month </lable>
+                        <input type="text" class="form-control" id="birth_month" placeholder="1-12" value="month">
+                    </div>
 
-                <div class="mb-3">
-                    <lable for="birth_year" class="form-lable1">Birth month </lable>
-                    <input type="text" class="form-control" id="birth_year" placeholder="2000">
-                </div>
-                <p>Gender</p>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="female" id="female">
-                    <lable class="form-check-lable" for=" female">Female</lable>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="male" id="male">
-                    <lable class="form-check-lable" for=" male">male</lable>
-                </div>
-                <button type="button" class="btn btn-primary">Primary</button>
+                    <div class="mb-3">
+                        <lable for="birth_year" class="form-lable1">Birth year </lable>
+                        <input type="text" class="form-control" id="birth_year" placeholder="2000" value="year">
+                    </div>
+                    <p>Gender</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="female" id="gender" value="female">
+                        <lable class="form-check-lable" for=" female">Female</lable>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="male" id="gender" value="male">
+                        <lable class="form-check-lable" for=" male">male</lable>
+                    </div>
+                    <input type="button" class="btn btn-primary" value="generate name" onclick="namefunction (document.getElementByid('birth_dayid').value,document.getElementByid('birth_month').value,document.getElementByid('birth_year').value,document.getElementByid('gender').value)">
+                </form>
             </div>
 
 
@@ -67,6 +69,7 @@
             </div>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
