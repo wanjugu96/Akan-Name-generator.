@@ -8,33 +8,35 @@
 
 <body>
     <div class="container">
-        <h1>
+        <h1 id="header">
             <center>Welcome to Akan name generator</center>
         </h1>
-        <br></br>
-        <h2>
-            Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. Here are Ghanian day names.
-        </h2>
-        <br></br>
-        <h3>Takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name. </h3>
-        <br></br>
+
+        <div id="description">
+            <h3>
+                Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. Here are Ghanian day names.
+            </h3>
+            <br></br>
+            <h4>Takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name. </h4>
+            <br></br>
+        </div>
         <div class="row">
             <div class="col-md">
                 <h1>Input your details below</h1>
                 <form name="name_generator" action="" method="POST">
                     <div class="mb-3">
                         <lable for="birth_day" class="form-lable1">Birth day</lable>
-                        <input type="text" class="form-control" id="birth_dayid" name="birth_day" placeholder="1-31" value="day">
+                        <input type="text" class="form-control" id="birth_dayid" name="birth_day" placeholder="1-31">
                     </div>
 
                     <div class="mb-3">
                         <lable for="birth_month" class="form-lable1">Birth month </lable>
-                        <input type="text" class="form-control" id="birth_monthid" name="birth_month" placeholder="1-12" value="month">
+                        <input type="text" class="form-control" id="birth_monthid" name="birth_month" placeholder="1-12">
                     </div>
 
                     <div class="mb-3">
                         <lable for="birth_year" class="form-lable1">Birth year </lable>
-                        <input type="text" class="form-control" name="birth_year" id="birth_yearid" placeholder="2000" value="year">
+                        <input type="text" class="form-control" name="birth_year" id="birth_yearid" placeholder="2000">
                     </div>
                     <p>Gender</p>
                     <div class="form-check">

@@ -23,6 +23,9 @@ function name_generator(day, gender) {
     //console.log(`day of the week is ${result}`)
     //let gender = 'female'
     let name;
+    if (day === 7) {
+        day = 0
+    }
     if (gender === 'female') {
         name = female_arr[day];
     } else {
@@ -56,4 +59,7 @@ function namefunction() { //onclick
 
     document.getElementById("day").innerHTML = day;
     document.getElementById("name").innerHTML = akan_name;
+
+    console.log(Math.ceil(day))
+    console.log(Math.floor(day))
 }
