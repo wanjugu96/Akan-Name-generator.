@@ -1,9 +1,15 @@
 console.log('working')
 
 function namefunction() { //onclick
-    const from = document.querySelector('form[name="name_generator"]')
+    const form = document.querySelector('form[name="name_generator"]')
     const day = form.elements['birth_day'].value;
+    const month = form.elements['birth_month'].value;
+    const year = form.elements['birth_year'].value;
+    const gender = form.elements['gender'].value;
     console.log(day)
+    console.log(month)
+    console.log(year)
+    console.log(gender)
 }
 
 function day_generator(day_of_month, year, month, gender) { //day generator
