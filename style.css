@@ -1,5 +1,4 @@
     .col-md {
-        background-color: hotpink;
         float: right;
         align-content: center;
     }
@@ -9,4 +8,14 @@
         margin-bottom: 2rem;
         background-color: #e9ecef;
         border-radius: .3rem;
+    }
+    
+    #description {
+        background-color: #F8C8C6;
+        padding: 15px;
+    }
+    
+    #header {
+        padding: 15px;
+        background-color: #CBD5F0;
     }
