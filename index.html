@@ -29,23 +29,24 @@
 
                     <div class="mb-3">
                         <lable for="birth_month" class="form-lable1">Birth month </lable>
-                        <input type="text" class="form-control" id="birth_month" placeholder="1-12" value="month">
+                        <input type="text" class="form-control" id="birth_monthid" name="birth_month" placeholder="1-12" value="month">
                     </div>
 
                     <div class="mb-3">
                         <lable for="birth_year" class="form-lable1">Birth year </lable>
-                        <input type="text" class="form-control" id="birth_year" placeholder="2000" value="year">
+                        <input type="text" class="form-control" name="birth_year" id="birth_yearid" placeholder="2000" value="year">
                     </div>
                     <p>Gender</p>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="female" id="gender" value="female">
+                        <input class="form-check-input" type="radio" name="gender" id="genderid" value="female">
                         <lable class="form-check-lable" for=" female">Female</lable>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="male" id="gender" value="male">
+                        <input class="form-check-input" type="radio" name="gender" id="genderid" value="male">
                         <lable class="form-check-lable" for=" male">male</lable>
                     </div>
-                    <input type="button" class="btn btn-primary" value="generate name" onclick="namefunction (document.getElementByid('birth_dayid').value,document.getElementByid('birth_month').value,document.getElementByid('birth_year').value,document.getElementByid('gender').value)">
+                    <input type="button" class="btn btn-primary" value="generate name" onclick="namefunction (document.getElementById('birth_dayid').value,document.getElementById('birth_monthid').value,document.getElementById('birth_yearid').value,document.getElementById('genderid').value)"
+                    />
                 </form>
             </div>
 
